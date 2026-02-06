@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: prompt-template-demo
+
+
+  datasource:
+    url: ${DB_URL}/dev_db
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+
+    hikari:
+      maximum-pool-size: 2
+      minimum-idle: 20
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
+  sql:
+    init:
+      mode: always
+
+server:
+  port: 8081
+
+app:
+  ai:
+    st-prompt:
+      enabled: true
