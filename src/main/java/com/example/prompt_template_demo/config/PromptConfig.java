@@ -15,16 +15,10 @@ import lombok.Getter;
 @ConditionalOnProperty(name = "app.ai.st-prompt.enabled", havingValue = "true")
 public class PromptConfig {
     private final Resource templateFile;
-    private final Resource accInfoFormatterFile;
-    private final Resource accInfoExtractorFile;
 
     public PromptConfig(
-            @Value("classpath:prompts/subject_expert.st") final Resource templateFile,
-            @Value("classpath:prompts/account_info_formatter.st") final Resource accInfoFormatterFile,
-            @Value("classpath:prompts/account_info_extractor.st") final Resource accInfoExtractorFile) {
+            @Value("classpath:prompts/subject_expert.st") final Resource templateFile) {
         this.templateFile = templateFile;
-        this.accInfoFormatterFile = accInfoFormatterFile;
-        this.accInfoExtractorFile = accInfoExtractorFile;
     }
 
     @Bean
