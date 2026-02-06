@@ -1,0 +1,18 @@
+data:Hello
+
+data:!
+
+data: How
+
+data: can
+
+data: I
+
+data: assist
+
+data: you
+
+data: today
+
+data:?
+
