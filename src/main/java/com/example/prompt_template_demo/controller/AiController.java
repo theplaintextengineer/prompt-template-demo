@@ -16,8 +16,8 @@ public class AiController {
   private final ChatService chatService;
 
   @GetMapping("/")
-  public ResponseEntity<Flux<String>> ask(@RequestParam String topic) {
-    var chatResponse = chatService.talkToLlm(topic);
+  public ResponseEntity<Flux<String>> ask(@RequestParam String message) {
+    var chatResponse = chatService.talkToLlm(message);
 
     return ResponseEntity.ok(chatResponse);
   }
