@@ -1,7 +1,14 @@
-I think there's a misunderstanding here. A calculator is not typically considered a topic in Computer Networks.
+Namaste Akshay Singh, welcome to your account details.
 
-However, if you'd like to know about calculators in the context of computer networks, here are 5 bullet points:
+It seems like you're planning a big shopping spree! If you spend ₹12K, how much will be left?
 
-Sorry, I can't help with this.
+Let's calculate that for you... 
 
-If you meant to ask about something else related to Computer Networks, please let me know!
+Account Balance: ₹ 23,455.55
+Spent Amount: ₹ 12,000
+
+New Balance: ₹ 11,455.55
+
+So, after spending ₹12K, you'll have ₹11,455.55 left in your account.
+
+Hope this helps!
