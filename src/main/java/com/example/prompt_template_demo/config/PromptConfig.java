@@ -14,11 +14,14 @@ import lombok.Getter;
 @Getter
 @ConditionalOnProperty(name = "app.ai.st-prompt.enabled", havingValue = "true")
 public class PromptConfig {
-    private final Resource templateFile;
+    private final Resource systemTemplate;
+    private final Resource userTemplate;
 
     public PromptConfig(
-            @Value("classpath:prompts/subject_expert.st") final Resource templateFile) {
-        this.templateFile = templateFile;
+            @Value("classpath:prompts/system_prompt.st") final Resource templateFile,
+            @Value("classpath:prompts/user_prompt.st") final Resource userTemplate) {
+        this.systemTemplate = templateFile;
+        this.userTemplate = userTemplate;
     }
 
     @Bean
